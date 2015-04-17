@@ -1,2 +1,13 @@
-<h1>Homepage#index</h1>
-<p>Find me in app/views/homepage/index.html.erb</p>
+<header>
+  <span class="right">
+    <label for="search">Search </label>
+    <input id="search" type="text" />
+  </span>
+  <h1>Winnipeg Furniture</h1>
+</header>
+<nav>
+  <ul>
+    <%= link_to 'Home', controller: 'homepage' %>
+    <%= link_to 'Product', controller: 'products' %>
+  </ul>
+</nav>
