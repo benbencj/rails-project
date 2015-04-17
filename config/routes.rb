@@ -5,7 +5,8 @@ Rails.application.routes.draw do
   ActiveAdmin.routes(self)
   get 'homepage/index'
   get '/products/index'
-
+  get '/websiteinfo/1' => 'websiteinfo#contact'
+  get '/websiteinfo/2' => 'websiteinfo#about'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
