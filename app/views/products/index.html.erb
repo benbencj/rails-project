@@ -4,6 +4,7 @@
   <thead>
     <tr>
       <th>Name</th>
+      <th>Picture</th>
       <th>Description</th>
       <th>Price</th>
       <th>Quantity</th>
@@ -15,6 +16,7 @@
     <% @products.each do |product| %>
       <tr>
         <td><%= product.name %></td>
+        <td><%= image_tag product.image.medium.url %></td>
         <td><%= product.description %></td>
         <td><%= product.price %></td>
         <td><%= product.quantity %></td>
