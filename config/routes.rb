@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   get '/products/index'
   get '/websiteinfo/1' => 'websiteinfo#contact'
   get '/websiteinfo/2' => 'websiteinfo#about'
+  get '/categories/index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
