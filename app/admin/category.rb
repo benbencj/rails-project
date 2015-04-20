@@ -1,7 +1,10 @@
-ActiveAdmin.register Product do
-  #belongs_to :category
+ActiveAdmin.register Category do
+  permit_params :name
 
-  permit_params :name, :description, :price, :quantity, :image, :category_id
+  #has_many :products
+  
+  
+
 # See permitted parameters documentation:
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
 #
@@ -14,6 +17,6 @@ ActiveAdmin.register Product do
 #   permitted << :other if resource.something?
 #   permitted
 # end
-
-
 end
+
+
