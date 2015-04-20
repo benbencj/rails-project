@@ -10,6 +10,10 @@ Rails.application.routes.draw do
   get '/websiteinfo/1' => 'websiteinfo#contact'
   get '/websiteinfo/2' => 'websiteinfo#about'
   get '/categories/index'
+  get '/filter/index'
+  get '/filter/on_sale'
+  get '/filter/new'
+  get '/filter/updated'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
