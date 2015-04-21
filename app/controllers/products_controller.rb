@@ -1,7 +1,7 @@
 class ProductsController < InheritedResources::Base
   def index
     @products = Product.all
-    @products = Product.order("name").page(params[:page]).per(5)    
+    @products = Product.order("name").page(params[:page]).per(4)    
   end
    
    

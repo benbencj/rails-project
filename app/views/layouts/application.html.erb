@@ -37,7 +37,32 @@
     </div>
   </header>
   
+  
+  
   <%= yield %>
+  <footer>
+    <nav id="bottom">
+      <ul>
+        <li><%= link_to 'Home', controller: 'homepage' %></li>
+        <li><%= link_to 'Contact', websiteinfo_1_path %></li>
+        <li><%= link_to 'About', websiteinfo_2_path %></li>
+        <li><%= link_to 'Admin', admin_root_path %></li>
+      </ul>
+    </nav>
+    <div id="social">
+      <ul>
+        <li>
+          <%= link_to(image_tag("facebookicon.jpg"), "http://www.facebook.com") %>
+        </li>
+        <li>
+          <%= link_to(image_tag("twittericon.jpg"), "http://www.twitter.com") %>
+        </li>
+        <li>
+          <%= link_to(image_tag("youtubeicon.jpg"), "http://www.youtube.com") %>
+        </li>
+      </ul>
+    </div>
+  </footer>
 </div>
 </body>
 </html>
