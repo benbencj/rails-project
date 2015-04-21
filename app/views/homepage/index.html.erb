@@ -1,7 +1,11 @@
 <header>
   <span class="right">
-    <label for="search">Search </label>
-    <input id="search" type="text" />
+    <div id="search">
+        <%= form_tag search_results_path, :action => 'search_results', :method => 'get' do %>
+          <%= text_field_tag :search, params[:search] %>
+          <%= submit_tag "Search", :name => nil %>
+        <% end %>
+    </div>
   </span>
   <h1>Winnipeg Furniture</h1>
 </header>

@@ -14,6 +14,9 @@ Rails.application.routes.draw do
   get '/filter/on_sale'
   get '/filter/new'
   get '/filter/updated'
+  
+  get 'search' => 'products#search', as: 'search'
+  get 'search_results' => 'products#search_results', as: 'search_results'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

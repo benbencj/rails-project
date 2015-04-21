@@ -1,0 +1,9 @@
+<h1>Search Results:</h1>
+
+<% if @products.empty? %>
+    <p>No results found</p>
+<% end %>
+
+<%= render partial: 'products/product',
+            collection: @products,
+            locals: { show_admin_links: false } %>  
