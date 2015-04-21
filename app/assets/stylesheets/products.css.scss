@@ -1,3 +1,140 @@
 // Place all the styles related to the Products controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+#container{
+    width: 100%;
+    margin: 0 auto;
+    padding: 1em;
+    
+    header{
+        background-color: #B0E0E6;
+        color: white;
+        height: 238px;
+    }
+}
+
+.right{
+    width: 200px;
+}
+
+nav{
+    width:900px;
+    margin:0px auto;
+    background-color: #A2B5CD;
+    height:40px;
+    line-height: 40px;
+    text-align: center;
+    box-shadow:1px 0px 2px #333, -1px 0px 2px #333;
+}
+
+nav ul, nav ul li{
+	display: inline;
+	margin:0px auto;
+	padding: 0px;
+}
+
+#mainheading{
+	clear:both;
+	position: relative;	
+	background: #6495ED;
+	overflow: hidden;
+	width: 900px;
+	height: 180px;
+	margin:0px auto;
+	text-align: center;
+	color: #FFF;
+}
+
+#mainheading h1{
+	font-family: Cinzel;
+	font-size: 48px;
+	margin-top: 60px;
+	text-shadow:1px 1px 2px #000;
+}
+
+#mainheading img{
+	position: absolute;
+	left:30px;
+	top:10px;
+}
+
+#paginate{
+    width: 900px;
+    margin:0px auto;
+}
+
+.product{
+    width: 872px;
+    margin:0px auto;
+    border: 1px solid grey;
+    padding: 1em;
+    background-color: #B0E0E6;
+}
+
+.index{
+    width: 900px;
+    margin:0px auto;
+    h1{
+        text-align: center;
+        font-family: Cinzel;
+	font-size: 36px;
+    }
+    table{
+        border: 1px solid grey;
+    }
+    table thead tr th{
+        background-color: #6495ED;
+        text-align: center;
+        font-family: Cinzel;
+    }
+    table tbody tr td{
+        text-align: center;
+        font-family: Cinzel;
+    }
+    table tr:nth-child(even){
+        background-color: #B0E0E6;
+    }
+    table tr:hover{
+        background-color: #8DB6CD;
+    }
+}
+
+.category{
+    width: 900px;
+    margin:0px auto;
+    text-align: center;
+    font-family: Cinzel;
+    background-color: #B0E0E6;
+    border: 1px solid grey;
+    h3{
+        background-color: #6495ED;
+    }
+    ul li{
+        list-style: none;
+    }
+}
+
+.filter{
+    width: 900px;
+    margin:0px auto;
+    text-align: center;
+    font-family: Cinzel;
+    background-color: #B0E0E6;
+    border: 1px solid grey;
+    h2{
+        background-color: #6495ED;
+    }
+}
+
+.info{
+    width: 900px;
+    margin:0px auto;
+    text-align: center;
+    font-family: Cinzel;
+    background-color: #B0E0E6;
+    border: 1px solid grey;
+    h1{
+        background-color: #6495ED;
+    }
+}
+

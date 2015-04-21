@@ -1,6 +1,10 @@
-<p id="notice"><%= notice %></p>
-
-<h3> Products under this category </h3>
-<% Product.where(category_id: @category.id).each do |product| %>
-<li> <%= link_to product.name, product %> </li>
-<% end %>
+<div class="category">
+  <p id="notice"><%= notice %></p>
+  
+  <h3> Products under this category </h3>
+  <% Product.where(category_id: @category.id).each do |product| %>
+    <ul>
+      <li><%= link_to product.name, product %></li>
+    </ul>
+  <% end %>
+</div>

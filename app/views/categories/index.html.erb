@@ -1,19 +1,21 @@
-<h1>Listing categories</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @categories.each do |category| %>
+<div class="index">
+  <h1>Listing categories</h1>
+  
+  <table>
+    <thead>
       <tr>
-        <td><%= link_to category.name, category %></td>
+        <th>Name</th>
       </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
+    </thead>
+  
+    <tbody>
+      <% @categories.each do |category| %>
+        <tr>
+          <td><%= link_to category.name, category %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+  
+  <br>
+</div>

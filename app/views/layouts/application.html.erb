@@ -7,8 +7,37 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+  <div id="container">
+    <header>
+      <div id="heading">
+        <span class="right">
+          <div id="search">
+              <%= form_tag search_results_path, :action => 'search_results', :method => 'get' do %>
+                <%= text_field_tag :search, params[:search] %>
+                <%= submit_tag "Search", :name => nil %>
+              <% end %>
+          </div>
+        </span>
+      </div>
+      <div id="mainheading">
+        <p><%= image_tag("heading_image.jpg", :alt => "heading", width: 200, height: 100) %></p>
+        <h1>Winnipeg Furniture</h1>
+      
+          <nav id="top">
+            <ul>
+              <li><%= link_to 'Home', controller: 'homepage' %></li>
+              <li><%= link_to 'Product', controller: 'products' %></li>
+              <li><%= link_to 'Category', controller: 'categories' %></li>
+              <li><%= link_to 'Filter', controller: 'filter' %></li>
+              <li><%= link_to 'Contact', websiteinfo_1_path %></li>
+              <li><%= link_to 'About', websiteinfo_2_path %></li>
+              <li><%= link_to 'Admin', admin_root_path %></li>
+            </ul>
+          </nav>
+    </div>
+  </header>
+  
+  <%= yield %>
+</div>
 </body>
 </html>

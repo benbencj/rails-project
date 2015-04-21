@@ -1,21 +1,13 @@
-<header>
-  <span class="right">
-    <div id="search">
-        <%= form_tag search_results_path, :action => 'search_results', :method => 'get' do %>
-          <%= text_field_tag :search, params[:search] %>
-          <%= submit_tag "Search", :name => nil %>
-        <% end %>
+<div class="box">
+    <ul class="list">
+        <li><%= image_tag("slide1.jpg", width: "900", class: "slide") %></li>
+        <li><%= image_tag("slide2.jpg", width: "900", class: "slide") %></li>
+        <li><%= image_tag("slide3.jpg", width: "900", class: "slide") %></li>
+        <li><%= image_tag("slide1.jpg", width: "900", class: "slide") %></li>
+    </ul>
+    <div class="number">
+        <a href="javascrpit:" class="number_1">1</a>
+        <a href="javascript:" class="number_2">2</a>
+        <a href="javascript:" class="number_3">3</a>
     </div>
-  </span>
-  <h1>Winnipeg Furniture</h1>
-</header>
-<nav>
-  <ul>
-    <li><%= link_to 'Home', controller: 'homepage' %></li>
-    <li><%= link_to 'Product', controller: 'products' %></li>
-    <li><%= link_to 'Category', controller: 'categories' %></li>
-    <li><%= link_to 'Filter', controller: 'filter' %></li>
-    <li><%= link_to 'Contact', websiteinfo_1_path %></li>
-    <li><%= link_to 'About', websiteinfo_2_path %></li>
-  </ul>
-</nav>
+</div>
