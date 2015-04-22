@@ -11,6 +11,12 @@ class ProductsController < InheritedResources::Base
   def search_results
     @products = Product.keyword_search(params[:search])  
   end
+  
+  def add_product_to_cart
+    render text: 'Successful'
+  end
+  
+  
    
   private
 

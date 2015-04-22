@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :carts
+
   resources :categories
 
   resources :products
@@ -15,8 +17,17 @@ Rails.application.routes.draw do
   get '/filter/new'
   get '/filter/updated'
   
+  get '/categories/1' => 'categories#show', as: 'cate_frame'
+  get '/categories/2' => 'categories#show', as: 'cate_sofa'
+  get '/categories/3' => 'categories#show', as: 'cate_chairs'
+  get '/categories/4' => 'categories#show', as: 'cate_tables'
+  get '/categories/5' => 'categories#show', as: 'cate_mattress'
+  
+  
   get 'search' => 'products#search', as: 'search'
   get 'search_results' => 'products#search_results', as: 'search_results'
+  
+  post '/add_product_to_cart/:id' => 'products#add_product_to_cart', as: 'add_to_cart'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
