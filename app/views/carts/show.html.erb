@@ -1,8 +1,19 @@
-<div class="cart">
+<div class="cart">  
   <h2>Your Cart</h2>  
-    <ul>      
-      <% @cart.line_items.each do |item| %>  
-        <li><%= item.product.name %></li>  
-      <% end %>  
-    </ul>  
+   <table>    
+    <% @cart.line_items.each do |item| %>
+      <tr>
+        <td><%= item.product.name %></td>  
+        <td><%= number_to_currency item.total_price %></td>
+      </tr>
+    <% end %>
+    
+    <tr>
+      <td><strong>Total:</strong></td>  
+      <td><%= number_to_currency(@cart.total_price) %></td>
+    </tr>
+     
+   </table>  
+  <%= button_to 'Empty cart', @cart, :method => :delete,  
+      :confirm => 'Are you sure?' %> 
 </div>

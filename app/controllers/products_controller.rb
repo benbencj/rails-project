@@ -13,7 +13,19 @@ class ProductsController < InheritedResources::Base
   end
   
   def add_product_to_cart
-    render text: 'Successful'
+    session[:product_to_cart] << params[:id].to_i
+    session[:product_to_cart].uniq!
+    redirect_to :back
+  end
+  
+  def remove_product_from_cart
+    session[:product_to_cart].delete(params[:id].to_i)
+    redirect_to :back
+  end
+  
+  def clear_cart
+    session[:product_to_cart] = nil
+    redirect_to :back
   end
   
   

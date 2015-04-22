@@ -13,6 +13,8 @@ class LineItemsController < InheritedResources::Base
      end  
    end
   end
+  
+  
 
   private
 
