@@ -1,8 +1,12 @@
 class Product < ActiveRecord::Base
-  #@products = Product.All
+  validates :name, :description, :price, :presence => true
+  validates :price, :numericality => {:greater_than_or_equal_to => 0.01}
+
+  
   mount_uploader :image, ProductImageUploader
   
   belongs_to :category, foreign_key: "category_id"
+  has_many :line_items
   
   def self.keyword_search(keywords)
     keywords = "%" + keywords + "%"

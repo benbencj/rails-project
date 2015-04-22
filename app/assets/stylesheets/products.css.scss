@@ -206,3 +206,15 @@ nav#bottom ul li:last-of-type:after{
     width: 900px;
     margin: 0 auto;
 }
+
+.cart{
+    width: 872px;
+    margin:0px auto;
+    background-color: #B0E0E6;
+    padding: 1em;
+    border: 1px solid grey;
+    text-align: center;
+    ul li{
+        list-style: none;
+    }
+}
