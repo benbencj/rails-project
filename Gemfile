@@ -48,3 +48,5 @@ gem 'coffee-script-source', '1.8.0'
 gem 'carrierwave'
 
 gem "mini_magick"
+
+gem 'rubocop', require: false
