@@ -218,3 +218,37 @@ nav#bottom ul li:last-of-type:after{
         list-style: none;
     }
 }
+
+.neworder{
+    width: 900px;
+    margin:0px auto;
+    border: 1px solid grey;
+}
+
+.neworder fieldset{
+    background-color: #B0E0E6;
+}
+
+.neworder legend{
+    background: #6495ED;
+}
+
+.neworder label{
+    width: 5em;  
+    float: left;  
+    text-align: right;  
+    padding-top: 0.2em;  
+    margin-right: 0.1em;  
+    display: block;
+}
+
+.neworder .submit{
+    margin-left: 4em;
+}
+
+.cartindex{
+    width: 900px;
+    margin:0px auto;
+    border: 1px solid grey;
+    background-color: #B0E0E6;
+}

@@ -21,9 +21,9 @@
       </div>
       <div id="mainheading">
         <p><%= image_tag("heading_image.jpg", :alt => "heading", width: 200, height: 100) %></p>
+        
         <h1>Winnipeg Furniture</h1>
-      
-          <nav id="top">
+            <p></p>          <nav id="top">
             <ul>
               <li><%= link_to 'Home', controller: 'homepage' %></li>
               <li><%= link_to 'Product', controller: 'products' %></li>
@@ -32,6 +32,7 @@
               <li><%= link_to 'Contact', websiteinfo_1_path %></li>
               <li><%= link_to 'About', websiteinfo_2_path %></li>
               <li><%= link_to 'Admin', admin_root_path %></li>
+              <li><%= link_to 'Your Cart', controller: 'carts' %></li>
             </ul>
           </nav>
     </div>

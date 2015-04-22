@@ -31,17 +31,7 @@ Rails.application.routes.draw do
   get 'search' => 'products#search', as: 'search'
   get 'search_results' => 'products#search_results', as: 'search_results'
   
-  post 'add_product_to_cart/:id',
-       to: 'products#add_product_to_cart',
-       as: 'add_to_cart'
-       
-  post 'remove_product_from_cart/:id',
-       to: 'products#remove_product_from_cart',
-       as: 'remove_from_cart'
-       
-  post 'clear_cart',
-       to: 'products#clear_cart',
-       as: 'clear_cart'
+  get '/carts/:id' => 'carts#show', as: 'cart_show' 
        
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
