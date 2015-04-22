@@ -11,6 +11,7 @@ class Product < ActiveRecord::Base
   def self.keyword_search(keywords)
     keywords = "%" + keywords + "%"
     Product.where("name LIKE ? OR description LIKE ?", keywords, keywords)
+    Product.where(category_id: params[:category].to_i) unless params[:category].blank?
   end
   #def self.search(search)
     #if search
